@@ -104,5 +104,6 @@ h4 {
 }
 
 .time {
+  display: none;
   font-size: 1rem;
 }

@@ -15,6 +15,9 @@ RacketCon is a public meeting for everyone interested in Racket: developers, con
 
 ◊h3{◊xtarget{Speakers}}
 
+◊speaker["" "John Carmack"]{To infinity and beyond}
+
+
 ◊speaker["09:30" "Matthew Flatt"]{Keep on making that Racket}
 
 ◊speaker["10:00" "Jay McCarthy"]{Get bonus: infinite levels at 60fps}
