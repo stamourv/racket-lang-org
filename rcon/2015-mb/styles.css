@@ -99,8 +99,7 @@ body {
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern' 1;
   font-feature-settings: 'liga' 1;
-  background: #778 url('pattern.png') fixed;
-  background: #778;
+  background: #778 url('cubit.png') fixed;
 }
 
 div#doc {

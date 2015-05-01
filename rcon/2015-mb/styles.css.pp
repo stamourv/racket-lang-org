@@ -47,8 +47,7 @@ body {
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern' 1;
   font-feature-settings: 'liga' 1;
-  background: ◊|fgbg| url('pattern.png') fixed;
-  background: ◊|fgbg|;
+  background: ◊|fgbg| url('cubit.png') fixed;
 }
 
 div#doc {
