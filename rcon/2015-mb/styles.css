@@ -124,8 +124,9 @@ h1 {
   font-size: 2rem;
   font-weight: 200;
   color: #778;
-  margin-right: 0.5rem;
-}
+  margin-right: 0.25rem;
+  position: relative;
+  left: -0.25rem; }
 
 h2 {
   display: inline;
@@ -158,4 +159,8 @@ h4 {
 .time {
   display: none;
   font-size: 1rem;
+}
+
+sponsor+sponsor:before {
+  content: "\00A0\00A0·\00A0\00A0";
 }

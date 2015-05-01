@@ -72,7 +72,9 @@ h1 {
   font-size: 2rem;
   font-weight: 200;
   color: ◊|fgbg|;
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
+  position: relative;
+  left: -0.25rem; ◊; this impliedly creates space on the right side
 }
 
 h2 {
@@ -106,4 +108,8 @@ h4 {
 .time {
   display: none;
   font-size: 1rem;
+}
+
+sponsor+sponsor:before {
+  content: "\00A0\00A0·\00A0\00A0";
 }

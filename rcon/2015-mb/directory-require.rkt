@@ -1,5 +1,5 @@
 #lang racket
-(require pollen/decode txexpr)
+(require pollen/decode txexpr sugar/list)
 (provide (all-defined-out))
 
 (define (speaker time name title . desc)
@@ -19,4 +19,8 @@
           #:string-proc (compose1 smart-quotes smart-dashes)
           #:exclude-tags '(style script)))
 
+
+(define (sponsor-list . sponsors-in)
+  (define sponsors (filter-split sponsors-in whitespace?))
+  `(div ,@(map (λ(s) `(sponsor ,@s)) sponsors)))
 
