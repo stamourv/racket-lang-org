@@ -104,6 +104,10 @@ h4 {
   margin-right: 0.5rem;
 }
 
+h3+div.speaker {
+  margin-top: -0.25rem;
+}
+
 .time {
   display: none;
   font-size: 1rem;
