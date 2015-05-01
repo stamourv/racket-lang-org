@@ -36,6 +36,10 @@
   width: 100%;
 }
 
+a:hover {
+  color: #c0c;
+}
+
 
 body {
   font-family: source-serif;
@@ -87,7 +91,7 @@ h2+h2:before {
 
 h3 {
   font-size: 0.8rem;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   color: ◊|fgbg|;
@@ -113,6 +117,6 @@ h3+div.speaker {
   font-size: 1rem;
 }
 
-sponsor+sponsor:before {
+sponsor+sponsor:before, con+con:before {
   content: "\00A0\00A0·\00A0\00A0";
 }
