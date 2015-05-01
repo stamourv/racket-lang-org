@@ -1,5 +1,5 @@
 #lang racket
-(require pollen/decode txexpr sugar/list sugar/string)
+(require pollen/decode sugar/list sugar/string)
 (provide (all-defined-out))
 
 (define (image src)
@@ -18,7 +18,7 @@
 
   
 (define (root . items)
-  (decode (make-txexpr 'root '() items)
+  (decode `(root () ,@items)
           #:string-proc (compose1 smart-quotes smart-dashes)
           #:exclude-tags '(style script)))
 
