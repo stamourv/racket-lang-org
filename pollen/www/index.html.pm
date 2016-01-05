@@ -1,10 +1,10 @@
 #lang pollen
 
 ◊header{
-◊img[#:src "plt-logo-flat-mb.svg" #:class "logo"] Racket
-
-◊span[#:style "color:gray;font-size:60%"]{the programmable programming language}
+◊img[#:src "plt-logo-flat-mb.svg" #:class "logo"] Racket ◊span[#:style "color:gray;font-size:60%"]{the programmable programming language}
 }
+
+◊toolbar[#:style "color:gray;font-size:60%;position:fixed;top:0.5rem;left:12rem"]{download · read the docs}
 
 ◊circus-box{
 ◊lang-circus{
@@ -41,5 +41,8 @@
 
 }
 }
+
+Hello
+There
 
 

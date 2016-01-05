@@ -6,38 +6,40 @@
   line-height: 1;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   display: block;
   background: white;
   font-family: "CooperHewitt-Book";
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1px solid black;
 }
 
 header {
   display: block;
-    padding: 2rem;
+    padding: 1rem;
+    padding-left: 4rem;
 }
 
 img.logo {
   border: 0px solid green;
   display: inline-block;
-  width: 1.5em;
+  width: 1.15em;
   transform: translate(0,0.15em);
 }
 
 circus-box {
   display: block;
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  height: 300px;
+  overflow-y: scroll;
 }
 
 lang-circus {
   display: flex;
-  width: 3000px;
-  height: 300px;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 lang {
@@ -50,8 +52,4 @@ lang {
   font-family: "Source Code Pro";
   font-weight: 400;
   color: #777;
-}
-
-lang + lang {
-  padding-left: 2rem;
 }
