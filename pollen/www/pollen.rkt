@@ -38,3 +38,7 @@
   (define-values (tag attrs elems) (txexpr->values row-xexpr))
   (define trimmed-elems (dropf elems whitespace?))
   (list tag attrs `(col-1 ,(car trimmed-elems)) (apply col-2 (cdr trimmed-elems))))
+
+
+(define (link url . xs)
+  `(a ((href ,url)) ,@xs))

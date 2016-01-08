@@ -2,20 +2,23 @@
 ◊(require css-tools)
 ◊(define debug-width 0)
 ◊(define max-width 1000)
+◊(define link-color "rgb(65, 86, 173)")
 
-◊(make-media-query 24 10.5 max-width 40 .25)   
+◊(make-media-query 16 9 max-width 40 .25)   
 
 * {
   margin: 0;
   padding: 0;
   line-height: 1.3;
   box-sizing: border-box;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 body {
-  font-family: "CooperHewitt-Book";
-  font-size: 1rem;
-  padding: 2rem;
+  font-family: "cooper-hewitt";
+  font-size: 1.5rem;
+  padding: 3rem;
   max-width: ◊|max-width|px;
   margin: auto;
 }
@@ -40,9 +43,25 @@ row#logo {
   font-size: 125%;
 }
 
-row#logo col-2 li {
+row#logo col-2 li,
+row#bottom col-2 li {
   width: 100%;
-  margin: 0;
+}
+
+row#logo * {
+  margin-bottom: 0;
+}
+
+row#bottom {
+  font-size: 70%;
+}
+
+row#bottom li a {
+  display: inline;
+}
+
+row#bottom a {
+  color: ◊|link-color|;
 }
 
 row#book {
@@ -58,6 +77,7 @@ row + row {
 col-1, col-2 {
   display: block;
   border: ◊|debug-width|px solid green;
+  margin-bottom: 1rem;
 }
 
 col-1 + col-2 {
@@ -65,7 +85,7 @@ col-1 + col-2 {
 }
 
 col-1 {
-  width: 14rem;
+  width: 20rem;
   font-size: 120%;
   text-align: right;
 }
@@ -78,11 +98,28 @@ col-2 {
   color:gray;
 }
 
-col-2 li {
+li {
   display: block;
   width: 50%;
-  margin-bottom: 1rem;
   padding-right: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+li a {
+  display: block;
+}
+
+li a:first-line {
+  color: ◊|link-color|;
+}
+
+li a:hover {
+  color: ◊|link-color|;
+}
+
+li a, li a:hover {
+  transition: color 0.2s;
 }
 
 row#book col-2 {
@@ -100,12 +137,22 @@ img.logo {
 }
 
 img.cover {
-  width: 4rem;
-  height: 6rem;
+  width: 5rem;
+  height: 7rem;
   float: left;
+  margin-right: 1rem;
+  opacity: 0.6;
 }
 
 div.book {
   display: flex;
   width: 50%;
+}
+
+code {
+  display: block;
+  white-space: pre;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-family: "source-code-pro";
 }
