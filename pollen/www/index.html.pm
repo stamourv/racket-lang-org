@@ -49,7 +49,7 @@ get started
 }
 
 ◊row{
-docs
+documentation
 
 ◊link["https://docs.racket-lang.org/guide/"]{The Racket Guide 
 Starts with a tutorial on Racket basics, and then it describes the rest of the Racket language.}

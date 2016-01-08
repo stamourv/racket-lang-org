@@ -89,6 +89,7 @@ col-1 {
   width: 20rem;
   font-size: 120%;
   text-align: right;
+  padding-right: 1rem;
 }
 
 col-2 {
