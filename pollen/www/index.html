@@ -3,41 +3,29 @@
 <head>
 <title>Racket</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" href="mb.css" />
+<link rel="stylesheet" href="main.css" />
 </head>
 <body>
 
-<header><img class="logo" src="plt-logo-flat-mb.svg" /> Racket <span style="color:gray;font-size:60%">the programmable programming language</span></header><p><toolbar style="color:gray;font-size:60%;position:fixed;top:0.5rem;left:12rem">download · read the docs</toolbar></p><p><circus-box><lang-circus>
-<lang>#lang racket
-;; Finds Racket sources in all subdirs
-(for ([path (in-directory)]
-      #:when (regexp-match? #rx"[.]rkt$" path))
-  (printf "source file: ~a\n" path))</lang>
-
-<lang>#lang web-server/insta
-;; A "hello world" web server
-(define (start request)
-  (response/xexpr
-   '(html
-     (body "Hello World"))))</lang>
-
-<lang>#lang racket  ; An echo server
-(define listener (tcp-listen 12345))
-(let echo-server ()
-  (define-values (in out) (tcp-accept listener))
-  (thread (lambda () (copy-port in out)
-                     (close-output-port out)))
-  (echo-server))</lang>
+<div id="doc"><row id="logo"><col-1><div><img class="logo" src="plt-logo-flat-mb.svg" /> Racket</div></col-1><col-2><li><p>a programmable programming language</p></li></col-2></row>
 
 
-<lang>#lang racket
-;; Report each unique line from stdin
-(define seen (make-hash))
-(for ([line (in-lines)])
-  (unless (hash-ref seen line #f)
-    (displayln line))
-  (hash-set! seen line #t))</lang>
-</lang-circus></circus-box></p><p>Hello<br />There</p>
+<row><col-1><div style="font-size:60%">Racket is a full-spectrum programming language. It goes beyond Lisp and Scheme with dialects that support objects, types, laziness, and more. Racket enables programmers to link components written in different dialects, and it empowers programmers to create new, project-specific dialects. Racket's libraries support applications from web servers and databases to GUIs and charts.</div></col-1><col-2><li><p>langbox</p></li></col-2></row>
+
+<row><col-1>download</col-1><col-2><li><p>dl box</p></li></col-2></row>
+
+<row><col-1>news</col-1><col-2><li><p>Racket version 6.3 is out!</p></li><li><p>(fifth RacketCon) was held in St. Louis on September 27. Videos are available.</p></li></col-2></row>
+
+<row><col-1>get started</col-1><col-2><li><p>Quick: An Introduction to Racket with Pictures</p></li><li><p>More: Systems Programming with Racket</p></li></col-2></row>
+
+<row><col-1>docs</col-1><col-2><li><p>The Racket Guide: Racket starts with a tutorial on Racket basics, and then it describes the rest of the Racket language.</p></li><li><p>Reference: Racket provides comprehensive coverage of all of Racket.</p></li><li><p>Continue: Web Applications in Racket describes how to use the Racket web server to build dynamic web applications.</p></li><li><p>Package Management: Racket explains how to install packages, and how to build and distribute your own.</p></li></col-2></row>
+
+<row><col-1>community</col-1><col-2><li><p>Mailing lists — Discussion lists for using and developing Racket.</p></li><li><p>IRC — Chat in the #racket channel on freenode.net, an informal discussion channel for all things related to Racket, or browse the logs.</p></li><li><p>Code — The Racket source code on GitHub.</p></li><li><p>Wiki — Useful pages include Intro Projects and Videos, including tutorials, interviews, and more.</p></li><li><p>Snapshot builds — The freshest versions of Racket.</p></li><li><p>Bug reports — File, query, and maybe fix existing reports.</p></li></col-2></row>
+
+<row><col-1>books</col-1><col-2><li><div class="book"><img class="cover" src="images/htdp-cover.gif" /> <desc>How to Design Programs<br />A principled approach to program design. Teaching language support is included with DrRacket. Aimed at the programming novice.</desc></div></li><li><div class="book"><img class="cover" src="images/plai-cover.jpg" /> PLAI: Foundations of programming languages. Understand the features that make languages tick. For undergraduates, graduate students, and experts.</div></li><li><div class="book"><img class="cover" src="images/racket_cover_web.png" /><br /><desc>Realm of Racket<br />Learn Racket and programming, one game at a time. Sample game code comes with the Racket distribution.For those just starting out with Racket.</desc></div></li><li><div class="book"><img class="cover" src="images/redex-cover.jpg" /><br /><desc>Semantics Engineering with PLT Redex<br />Lightweight automation for semantics. Model your own programming language semantics. For the working language engineer.</desc></div></li></col-2></row>
+
+
+<row><col-1>mo’</col-1><col-2><li><p>People — The people behind Racket.</p></li><li><p>Research — Publications and educational resources.</p></li></col-2></row></div>
 
 
 </body></html>

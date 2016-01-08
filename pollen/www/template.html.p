@@ -3,11 +3,11 @@
 <head>
 <title>Racket</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" href="mb.css" />
+<link rel="stylesheet" href="main.css" />
 </head>
 <body>
 
-◊(->html doc #:splice #t)
+◊(->html doc)
 
 
 </body></html>
