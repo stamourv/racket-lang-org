@@ -19,6 +19,7 @@ body {
   font-family: "cooper-hewitt";
   font-size: 1.5rem;
   padding: 3rem;
+  padding-top: 1.5rem;
   max-width: ◊|max-width|px;
   margin: auto;
 }
@@ -40,7 +41,7 @@ row {
 }
 
 row#logo {
-  font-size: 125%;
+  font-size: 140%;
 }
 
 row#logo col-2 li,

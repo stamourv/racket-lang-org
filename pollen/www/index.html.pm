@@ -34,7 +34,7 @@ dl box
 ◊row{
 news
 
-◊link["http://blog.racket-lang.org/2015/11/racket-v63.html"]{Racket version 6.3 is out!}
+◊link["http://blog.racket-lang.org/2015/11/racket-v63.html"]{Racket version 6.3 is available}
 
 ◊link["https://con.racket-lang.org/"]{(fifth RacketCon) was held in St. Louis on September 27. Videos are available.}
 }
