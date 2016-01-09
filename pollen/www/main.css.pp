@@ -2,7 +2,7 @@
 ◊(require css-tools)
 ◊(define debug-width 0)
 ◊(define max-width 1000)
-◊(define link-color "rgb(65, 86, 173)")
+◊(define link-color "rgb(65, 86, 143)")
 
 ◊(make-media-query 16 9 max-width 40 .25)   
 
@@ -16,10 +16,12 @@
 }
 
 body {
+  ◊(make-css-kerning)
+  ◊(make-css-ligatures)
   font-family: "cooper-hewitt";
   font-size: 1.5rem;
   padding: 3rem;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   max-width: ◊|max-width|px;
   margin: auto;
 }
@@ -51,6 +53,7 @@ row#bottom col-2 li {
 
 row#logo * {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 row#bottom {
@@ -87,7 +90,7 @@ col-1 + col-2 {
 
 col-1 {
   width: 20rem;
-  font-size: 120%;
+  font-size: 115%;
   text-align: right;
   padding-right: 1rem;
 }
@@ -108,21 +111,10 @@ li {
 
 }
 
-li a {
-  display: block;
-}
 
-li a:first-line {
-  color: ◊|link-color|;
-}
 
-li a:hover {
-  color: ◊|link-color|;
-}
 
-li a, li a:hover {
-  transition: color 0.2s;
-}
+
 
 row#book col-2 {
   
@@ -157,4 +149,51 @@ code {
   font-size: 1.1rem;
   line-height: 1.5rem;
   font-family: "source-code-pro";
+}
+
+code a {
+  display: inline;
+  color: ◊|link-color|;
+  font-weight: bolder;
+}
+
+download-button {
+  display:inline-block;
+  background: ◊|link-color|;
+  color: white;
+  border: 0.5rem solid ◊|link-color|;
+  padding: 0.4rem;
+  padding-bottom: 0rem;
+}
+
+empty-button {
+ display:inline-block;
+  border: 0.5rem solid white;
+ padding-top: 0.4rem;
+} 
+}
+
+download-button:hover {
+  opacity: 0.6;
+}
+
+download-button:active {
+  opacity: 1;
+}
+
+a {
+  color: ◊|link-color|;
+  font-weight: bolder;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+a:active {
+  opacity: 1;
+}
+
+a, a:hover {
+  transition: color 0.2s;
 }

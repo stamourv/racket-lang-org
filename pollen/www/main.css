@@ -39,10 +39,26 @@
 }
 
 body {
+  text-rendering: optimizeLegibility;
+-moz-font-feature-settings: 'kern=1';
+-moz-font-feature-settings: 'kern' 1;
+-webkit-font-feature-settings: 'kern' 1;
+-o-font-feature-settings: 'kern' 1;
+-ms-font-feature-settings: 'kern' 1;
+font-feature-settings: 'kern' 1;
+
+  text-rendering: optimizeLegibility;
+-moz-font-feature-settings: 'liga=1';
+-moz-font-feature-settings: 'liga' 1;
+-webkit-font-feature-settings: 'liga' 1;
+-o-font-feature-settings: 'liga' 1;
+-ms-font-feature-settings: 'liga' 1;
+font-feature-settings: 'liga' 1;
+
   font-family: "cooper-hewitt";
   font-size: 1.5rem;
   padding: 3rem;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   max-width: 1000px;
   margin: auto;
 }
@@ -74,6 +90,7 @@ row#bottom col-2 li {
 
 row#logo * {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 row#bottom {
@@ -85,7 +102,7 @@ row#bottom li a {
 }
 
 row#bottom a {
-  color: rgb(65, 86, 173);
+  color: rgb(65, 86, 143);
 }
 
 row#book {
@@ -110,7 +127,7 @@ col-1 + col-2 {
 
 col-1 {
   width: 20rem;
-  font-size: 120%;
+  font-size: 115%;
   text-align: right;
   padding-right: 1rem;
 }
@@ -131,21 +148,10 @@ li {
 
 }
 
-li a {
-  display: block;
-}
 
-li a:first-line {
-  color: rgb(65, 86, 173);
-}
 
-li a:hover {
-  color: rgb(65, 86, 173);
-}
 
-li a, li a:hover {
-  transition: color 0.2s;
-}
+
 
 row#book col-2 {
 
@@ -180,4 +186,51 @@ code {
   font-size: 1.1rem;
   line-height: 1.5rem;
   font-family: "source-code-pro";
+}
+
+code a {
+  display: inline;
+  color: rgb(65, 86, 143);
+  font-weight: bolder;
+}
+
+download-button {
+  display:inline-block;
+  background: rgb(65, 86, 143);
+  color: white;
+  border: 0.5rem solid rgb(65, 86, 143);
+  padding: 0.4rem;
+  padding-bottom: 0rem;
+}
+
+empty-button {
+ display:inline-block;
+  border: 0.5rem solid white;
+ padding-top: 0.4rem;
+}
+}
+
+download-button:hover {
+  opacity: 0.6;
+}
+
+download-button:active {
+  opacity: 1;
+}
+
+a {
+  color: rgb(65, 86, 143);
+  font-weight: bolder;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+a:active {
+  opacity: 1;
+}
+
+a, a:hover {
+  transition: color 0.2s;
 }

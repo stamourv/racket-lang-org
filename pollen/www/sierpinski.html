@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Racket</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="main.css" />
+<link rel="stylesheet" href="fonts/fonts.css" />
+</head>
+<body>
+
+<div id="doc"><pre>#lang <a class="codemodpath" href="https://docs.racket-lang.org/reference/index.html" rel="nofollow">racket</a>  <span class="codecomment">; draw a Sierpinski triangle</span>
+<span class="codeparenthesis">(</span><a class="codelinkimportform" href="https://docs.racket-lang.org/reference/require.html#(form._((lib._racket/private/base..rkt)._require))" rel="nofollow">require</a> <a class="codemodpath" href="https://docs.racket-lang.org/teachpack/2htdpimage.html" rel="nofollow">2htdp/image</a><span class="codeparenthesis">)</span>
+<span class="codeparenthesis">(</span><a class="codelinkimportform" href="https://docs.racket-lang.org/reference/let.html#(form._((lib._racket/private/letstx-scheme..rkt)._let))" rel="nofollow">let</a> <span class="codeid">sierpinski</span> <span class="codeparenthesis">(</span><span class="codeparenthesis">[</span><span class="codeid">n</span> <span class="codeconstant">8</span><span class="codeparenthesis">]</span><span class="codeparenthesis">)</span>
+  <span class="codeparenthesis">(</span><a class="codelinkimportform" href="https://docs.racket-lang.org/reference/if.html#(form._((lib._racket/private/letstx-scheme..rkt)._cond))" rel="nofollow">cond</a>
+    <span class="codeparenthesis">[</span><span class="codeparenthesis">(</span><a class="codelinkimportid" href="https://docs.racket-lang.org/reference/number-types.html#(def._((quote._~23~25kernel)._zero~3f))" rel="nofollow">zero?</a> <span class="codeid">n</span><span class="codeparenthesis">)</span> <span class="codeparenthesis">(</span><a class="codelinkimportid" href="https://docs.racket-lang.org/teachpack/2htdpimage.html#(def._((lib._2htdp/image..rkt)._triangle))" rel="nofollow">triangle</a> <span class="codeconstant">2</span> <a class="codelinkimportform" href="https://docs.racket-lang.org/reference/quote.html#(form._((quote._~23~25kernel)._quote))" rel="nofollow">'</a><span class="codeid">solid</span> <a class="codelinkimportform" href="https://docs.racket-lang.org/reference/quote.html#(form._((quote._~23~25kernel)._quote))" rel="nofollow">'</a><span class="codeid">red</span><span class="codeparenthesis">)</span><span class="codeparenthesis">]</span>
+    <span class="codeparenthesis">[</span>else <span class="codeparenthesis">(</span><a class="codelinkimportform" href="https://docs.racket-lang.org/reference/define.html#(form._((lib._racket/private/base..rkt)._define))" rel="nofollow">define</a> <span class="codeid">t</span> <span class="codeparenthesis">(</span><span class="codeid">sierpinski</span> <span class="codeparenthesis">(</span><a class="codelinkimportid" href="https://docs.racket-lang.org/reference/generic-numbers.html#(def._((quote._~23~25kernel)._-))" rel="nofollow">-</a> <span class="codeid">n</span> <span class="codeconstant">1</span><span class="codeparenthesis">)</span><span class="codeparenthesis">)</span><span class="codeparenthesis">)</span>
+          <span class="codeparenthesis">(</span><a class="codelinkimportid" href="https://docs.racket-lang.org/teachpack/2htdpimage.html#(def._((lib._2htdp/image..rkt)._freeze))" rel="nofollow">freeze</a> <span class="codeparenthesis">(</span><a class="codelinkimportid" href="https://docs.racket-lang.org/teachpack/2htdpimage.html#(def._((lib._2htdp/image..rkt)._above))" rel="nofollow">above</a> <span class="codeid">t</span> <span class="codeparenthesis">(</span><a class="codelinkimportid" href="https://docs.racket-lang.org/teachpack/2htdpimage.html#(def._((lib._2htdp/image..rkt)._beside))" rel="nofollow">beside</a> <span class="codeid">t</span> <span class="codeid">t</span><span class="codeparenthesis">)</span><span class="codeparenthesis">)</span><span class="codeparenthesis">)</span><span class="codeparenthesis">]</span><span class="codeparenthesis">)</span><span class="codeparenthesis">)</span></pre></div>
+
+
+</body></html>
