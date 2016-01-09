@@ -4,7 +4,7 @@
 ◊(define max-width 1000)
 ◊(define link-color "rgb(65, 86, 143)")
 
-◊(make-media-query 16 9 max-width 40 .25)   
+◊(make-media-query 16 8 max-width 60 .5)   
 
 * {
   margin: 0;
