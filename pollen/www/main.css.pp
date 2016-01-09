@@ -81,7 +81,7 @@ row + row {
 col-1, col-2 {
   display: block;
   border: ◊|debug-width|px solid green;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 col-1 + col-2 {
@@ -101,6 +101,7 @@ col-2 {
  flex-wrap: wrap;
    width: 100%;
   color:gray;
+  font-size: 90%;
 }
 
 li {
@@ -132,7 +133,7 @@ img.logo {
 
 img.cover {
   width: 5rem;
-  height: 7rem;
+  height: 6.2rem;
   float: left;
   margin-right: 1rem;
   opacity: 0.6;
