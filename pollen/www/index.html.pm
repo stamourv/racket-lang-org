@@ -12,7 +12,7 @@ a programmable programming language
 
 
 ◊row{
-◊div[#:style "font-size:60%"]{Racket is a full-spectrum programming language. It goes beyond Lisp and Scheme with dialects that support objects, types, laziness, and more. Racket enables programmers to link components written in different dialects, and it empowers programmers to create new, project-specific dialects. Racket's libraries support applications from web servers and databases to GUIs and charts.}
+◊div[#:style "font-size:1.1rem;line-height:1.5rem"]{Racket is a full-spectrum programming language. It goes beyond Lisp and Scheme with dialects that support objects, types, laziness, and more. Racket enables programmers to link components written in different dialects, and it empowers programmers to create new, project-specific dialects. Racket's libraries support applications from web servers and databases to GUIs and charts.}
 
 
 ◊code{#lang racket  

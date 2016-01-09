@@ -154,7 +154,7 @@ div.book {
 code {
   display: block;
   white-space: pre;
-  font-size: 1.2rem;
-  line-height: 1.4;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
   font-family: "source-code-pro";
 }
