@@ -174,6 +174,7 @@ pre a {
   top: inherit;
   bottom: -2rem;
   width: 3rem;
+  opacity: 0.3;
 }
 
 
