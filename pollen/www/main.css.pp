@@ -38,16 +38,19 @@ row {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-    border: ◊|debug-width|px solid red;
-   align-items: baseline;
+  border: ◊|debug-width|px solid red;
+  align-items: baseline;
 }
 
 row#logo {
   font-size: 140%;
 }
 
-row#logo col-2 li,
-row#bottom col-2 li {
+row#samples {
+   align-items: flex-start;
+}
+
+row.one-column col-2 > li {
   width: 100%;
 }
 
@@ -109,6 +112,7 @@ li {
   width: 50%;
   padding-right: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
 
 }
 
@@ -144,19 +148,35 @@ div.book {
   width: 50%;
 }
 
-code {
-  display: block;
-  white-space: pre;
+pre {
   font-size: 1.1rem;
   line-height: 1.5rem;
   font-family: "source-code-pro";
 }
 
-code a {
-  display: inline;
-  color: ◊|link-color|;
+pre a {
   font-weight: bolder;
 }
+
+.gallery {
+  height: 22rem;
+  width: 100%;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 100%;
+  padding-left: .25em; ◊; to correct for slider rounding error
+}
+
+.flickity-prev-next-button {
+  position: absolute;
+  top: inherit;
+  bottom: -2rem;
+  width: 3rem;
+}
+
+
 
 download-button {
   display:inline-block;

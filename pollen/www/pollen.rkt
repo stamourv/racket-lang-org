@@ -6,10 +6,10 @@
   #;(define elements-with-paragraphs
     (decode-elements elems #:txexpr-elements-proc detect-paragraphs
                      #:exclude-tags '(style script lang lang-circus)))
-  (list* 'div '((id "doc"))
+  (list* 'div '((id "doc")) elems
          #;(decode-elements elements-with-paragraphs
                           #:string-proc (compose1 smart-quotes)
-                          #:exclude-tags '(style script lang)) elems))
+                          #:exclude-tags '(style script lang)) ))
 
 
 (define (cover path)
@@ -33,11 +33,9 @@
   `(div ((class "book")) ,@xs))
 
 
-(define (row . xs)
-  (define row-xexpr (apply (make-default-tag-function 'row) xs))
-  (define-values (tag attrs elems) (txexpr->values row-xexpr))
+(define-tag-function (row attrs elems)
   (define trimmed-elems (dropf elems whitespace?))
-  (list tag attrs `(col-1 ,(car trimmed-elems)) (apply col-2 (cdr trimmed-elems))))
+  `(row ,attrs (col-1 ,(car trimmed-elems)) ,(apply col-2 (cdr trimmed-elems))))
 
 
 (define (link url . xs)

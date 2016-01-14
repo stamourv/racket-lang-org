@@ -1,8 +1,20 @@
 #lang pollen
+◊(require "codesamples.rkt")
 
+◊script[#:type "text/javascript"]{
+function SetupFlickity(){
+    // http://flickity.metafizzy.co/options.html
+    new Flickity( ".gallery", {
+      // options
+      cellAlign: 'left',
+      wrapAround: true,
+      pageDots: false,
+      initialIndex: Math.floor((Math.random() * ◊(number->string (length codesamples))) + 1),
+      /* autoPlay: 1500, */
+    });}
+}
 
-
-◊row['((id "logo"))]{
+◊row[#:id "logo" #:class "one-column"]{
 ◊div{◊img[#:src "plt-logo-flat-mb.svg" #:class "logo"] Racket}
 
 
@@ -10,15 +22,19 @@ a programmable programming language
 }
 
 
-◊row{
+◊row[#:id "samples" #:class "one-column"]{
 ◊div[#:style "font-size:1.1rem;line-height:1.5rem"]{Racket is a full-spectrum programming language. It goes beyond Lisp and Scheme with dialects that support objects, types, laziness, and more. Racket enables programmers to link components written in different dialects, and it empowers programmers to create new, project-specific dialects. Racket’s libraries support applications from web servers and databases to GUIs and charts.}
 
-◊code{
-◊(dynamic-require "sierpinski.html.pm" 'doc)
-}
+
+◊(apply div #:class "gallery"
+(drop-right 
+(for/list ([codesample (in-list codesamples)])
+◊div[#:class "gallery-cell"]{◊|codesample|}) 1))
 
 
 }
+
+
 
 ◊row{
 download Racket 6.3
@@ -113,7 +129,7 @@ Lightweight automation for semantics. Model your own programming language semant
 
 
 
-◊row['((id "bottom"))]{
+◊row[#:id "bottom" #:class "one-column"]{
 thank you
 
 To ◊link["http://www.nsf.gov/"]{the NSF}, ◊link["http://www.darpa.mil/"]{DARPA}, the ◊link["http://www.ed.gov/FIPSE/"]{Fund for the Improvement of Postsecondary Education (FIPSE)} at the ◊link["http://www.ed.gov/"]{US Department of Education}, the ◊link["http://www.exxonmobil.com/Corporate/community_foundation.aspx"]{Exxon Foundation}, CORD, partners of the Academy of Information Technology, ◊link["http://microsoft.com/"]{Microsoft}, ◊link["http://mozilla.org/"]{Mozilla}, and ◊link["http://google.com/"]{Google} for their generous support over the years.}
