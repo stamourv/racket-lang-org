@@ -3,7 +3,17 @@
 
 ◊(define code-descriptions
 (list
+
+ ◊p{◊b{What's Racket?} It's an open-source, batteries-included programming language that builds on the best traditions of Lisp and Scheme. It's also a construction kit for making new programming languages — large and small.}
+
+ ◊p{◊b{Lisp? So there's a lot of parentheses?} Of course. Racket is an expression-based language that emphasizes functional programming. You can also rewrite code using syntax transformations.}
+
+ ◊p{◊b{New programming languages? Seriously?} Yes! Racket lets you create little languages — to solve specific problems — or big ones. These languages can be similar to Racket, or they can have completely different syntactic and semantic rules.}
+
+ ◊p{◊b{So who's behind this?} Racket is a 20-year collaboration among a group of programming-language professors — known as the PLT group — who use Racket for teaching, research, and practical programming.}
+
  ◊p{Racket goes beyond Lisp and Scheme with dialects that support objects, types, laziness, and more. Racket lets you link components written in different dialects create domain-specific languages. Racket’s libraries support applications from web servers and databases to GUIs and charts.}
+
 
  ◊p{The ◊tt{in-directory} function constructs a sequence that walks a directory tree (starting with the current directory, by default) and generates paths in the tree.  The ◊tt{for} form binds ◊tt{path} to each path in the sequence, and ◊tt{regexp-match?} applies a pattern to the path.}
 
@@ -46,7 +56,7 @@ function SetupFlickity(){
 ◊div{◊img[#:src "plt-logo-flat-mb.svg" #:class "logo"] Racket}
 
 
-a programmable programming language
+the programmable programming language
 }
 
 
@@ -57,8 +67,6 @@ a programmable programming language
 
 ◊row[#:id "samples" #:class "one-column"]{
 ◊div[#:style "font-size:1.1rem;line-height:1.5rem"]{◊code-description}
-
-
 ◊div[#:class "gallery-cell"]{◊code-sample}
 
 })
