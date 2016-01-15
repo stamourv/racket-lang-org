@@ -233,7 +233,7 @@ download-button {
 
 empty-button {
  display:inline-block;
-  border: 0.5rem solid white;
+  border-top: 0.5rem solid white;
  padding-top: 0.4rem;
 }
 }

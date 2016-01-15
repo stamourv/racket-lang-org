@@ -86,7 +86,7 @@ community
 Discussion lists for using and developing Racket.
 
 ◊link["https://racket-lang.org/irc-chat.html"]{IRC}
-Chat in the #racket channel on freenode.net, an informal discussion channel for all things related to Racket, or ◊link["https://botbot.me/freenode/racket/"]{browse the logs}.
+Chat in the #racket channel on ◊link["http://freenode.net/"]{freenode.net} or ◊link["https://botbot.me/freenode/racket/"]{browse the logs}.
 
 ◊link["https://github.com/plt/racket/"]{Code}
 The Racket source code on GitHub.
