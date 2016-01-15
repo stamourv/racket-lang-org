@@ -35,6 +35,7 @@ body {
 
 
 row {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -44,6 +45,9 @@ row {
 
 row#logo {
   font-size: 140%;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 row#samples {
@@ -75,11 +79,14 @@ row#book {
    align-items: flex-start;
   }
 
-row + row {
+
+row {
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid #ccc;
 }
+
+
 
 col-1, col-2 {
   display: block;
@@ -151,6 +158,9 @@ div.book {
 pre {
   font-size: 1.1rem;
   line-height: 1.5rem;
+}
+
+tt, pre {
   font-family: "source-code-pro";
 }
 
@@ -159,23 +169,31 @@ pre a {
 }
 
 .gallery {
-  height: 22rem;
+  height: 18rem;
   width: 100%;
 }
 
-.gallery-cell {
-  width: 100%;
-  height: 100%;
-  padding-left: .25em; ◊; to correct for slider rounding error
-}
-
-.flickity-prev-next-button {
+.gallery button {
   position: absolute;
   top: inherit;
   bottom: -2rem;
   width: 3rem;
   opacity: 0.3;
 }
+
+.gallery button.previous {
+  left: -1rem;
+}
+
+.gallery button.next {
+  right: -1rem;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 100%;
+}
+
 
 
 

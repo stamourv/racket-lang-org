@@ -1,5 +1,5 @@
 #lang pollen
-◊(require "codesamples.rkt")
+◊(require "code-support.rkt")
 
 ◊script[#:type "text/javascript"]{
 function SetupFlickity(){
@@ -9,8 +9,6 @@ function SetupFlickity(){
       cellAlign: 'left',
       wrapAround: true,
       pageDots: false,
-      initialIndex: Math.floor((Math.random() * ◊(number->string (length codesamples))) + 1),
-      /* autoPlay: 1500, */
     });}
 }
 
@@ -22,17 +20,21 @@ a programmable programming language
 }
 
 
-◊row[#:id "samples" #:class "one-column"]{
-◊div[#:style "font-size:1.1rem;line-height:1.5rem"]{Racket is a full-spectrum programming language. It goes beyond Lisp and Scheme with dialects that support objects, types, laziness, and more. Racket enables programmers to link components written in different dialects, and it empowers programmers to create new, project-specific dialects. Racket’s libraries support applications from web servers and databases to GUIs and charts.}
-
 
 ◊(apply div #:class "gallery"
-(drop-right 
-(for/list ([codesample (in-list codesamples)])
-◊div[#:class "gallery-cell"]{◊|codesample|}) 1))
+(for/list ([code-description (in-list code-descriptions)]
+[code-sample (in-list code-samples)])
+
+◊row[#:id "samples" #:class "one-column"]{
+◊div[#:style "font-size:1.1rem;line-height:1.5rem"]{◊code-description}
 
 
-}
+◊div[#:class "gallery-cell"]{◊code-sample}
+
+})
+)
+
+
 
 
 
