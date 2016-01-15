@@ -1,6 +1,36 @@
 #lang pollen
 ◊(require "code-support.rkt")
 
+◊(define code-descriptions
+(list
+ ◊p{Racket goes beyond Lisp and Scheme with dialects that support objects, types, laziness, and more. Racket lets you link components written in different dialects create domain-specific languages. Racket’s libraries support applications from web servers and databases to GUIs and charts.}
+
+ ◊p{The ◊tt{in-directory} function constructs a sequence that walks a directory tree (starting with the current directory, by default) and generates paths in the tree.  The ◊tt{for} form binds ◊tt{path} to each path in the sequence, and ◊tt{regexp-match?} applies a pattern to the path.}
+
+ ◊p{This example implements a web server using the ◊tt{web-server/insta} language.  Each time a connection is made to the server, the ◊tt{start} function is called to get the HTML to send back to the client.}
+
+ ◊p{Racket makes it easy to use TCP sockets and spawn threads to handle them.  This program starts a server at TCP port 12345 that echoes anything a client sends back to the client.}
+
+ ◊p{Uses a hash table to record previously seen lines.  You can run this program in DrRacket, but it makes more sense from the command line.}
+
+ ◊p{The ◊tt{2htdp/image} library provides easy-to-use functions for constructing images, and DrRacket can display an image result as easily as it can display a number result.  In this case, a ◊tt{sierpinski} function is defined and called (at the same time) to generate a Sierpinski triangle of depth 8.}
+
+ ◊p{This simple guesing game demonstates Racket's class-based GUI toolkit.  The ◊tt{frame%} class implements a top-level window, and ◊tt{button%} obviously implements a button. The ◊tt{check} function defined here produces an function that is used for the button's callback action.}
+
+ ◊p{Add a call to ◊tt{let-me-google-that-for-you} to get a list of search results.}
+
+ ◊p{Playing a game but no dice on hand?  Let Racket roll for you.  The ◊tt{command-line} form makes sure that the right number of arguments are provided and automatically implements the ◊tt{--help} switch.}
+
+ ◊p{This prints out: ◊tt{αβγδεζηθικλμνξοπρςστυφχψω} You can also spell ◊tt{#\α} as ◊tt{#\u3B1} to stay within ASCII. Fortunately, Racket and DrRacket are both perfectly happy to use Unicode characters, and DrRacket comes with shortcuts for inserting them.}
+
+ ◊p{Racket's mission includes education at all levels.  This program uses the ◊tt{htdp/bsl} teaching language, the ◊tt{2htdp/image} library for creating pictures in the teaching languages, and the ◊tt{2htdp/universe} library for interactive animations.}
+
+ ◊p{And now for something completely different.  The ◊tt{lazy} language is more like Haskell than Lisp, so feel free to build an infinite list and look at only part of it.} ◊p{Racket's type system is designed to let you add types after you've worked for a while in untyped mode — even if your untyped program wouldn't fit nicely in a conventional type system.}
+
+ ◊p{This program uses the ◊tt{scribble/base} language for generating documents using a prose-friendly syntax.} ◊p{This program uses the ◊tt{plot} library to draw plots of functions.  Note that the plots are actual value, which DrRacket shows in graphical form.}
+
+ ◊p{Racket comes with plenty of libraries.} ◊p{Using the FFI means that you're not limited to using Racket libraries: pulling out a foreign function is easy, and can even be done dynamically on the REPL.}))
+
 ◊script[#:type "text/javascript"]{
 function SetupFlickity(){
     // http://flickity.metafizzy.co/options.html

@@ -1,14 +1,7 @@
-#lang racket
-(require pollen/convert txexpr)
+#lang pollen/mode racket/base
+(require pollen/convert txexpr xml racket/file pollen/top)
 
 (define html (format "<html>~a</html>" (file->string "code-samples.txt")))
 (define xexpr (html->xexpr html))
 (define code-samples (filter (λ(i) (and (txexpr? i) (eq? 'pre (get-tag i)))) (get-elements xexpr)))
 (provide code-samples)
-
-
-
-(define code-descriptions
-  (map html->xexpr (string-split (file->string "code-descriptions.txt") "\n")))
-
-(provide code-descriptions)
