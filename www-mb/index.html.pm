@@ -180,7 +180,7 @@ software
 
 ◊link["https://github.com/plt/racket/"]{Source code}
 
-◊link["https://bugs.racket-lang.org/"]{Bug reports}
+◊link["https://github.com/racket/racket/issues"]{Bug reports}
 
 ◊link["https://pre.racket-lang.org/installers/"]{Nightly snapshot builds}
 
@@ -213,7 +213,7 @@ news
 
 ◊link["http://blog.racket-lang.org/2015/11/racket-v63.html"]{Racket version 6.7} is available
 
-◊link["https://con.racket-lang.org/"]{(sixth RacketCon)} will be held in St. Louis on September 18, 2016.
+◊link["https://con.racket-lang.org/"]{(sixth RacketCon)} was held in St. Louis on September 18, 2016.
 }
 
 ◊section{
@@ -223,7 +223,7 @@ community
 
 ◊link["https://blog.racket-lang.org/"]{Blog}
 
-◊link["https://racket-lang.org/irc-chat.html"]{IRC}
+◊link["https://botbot.me/freenode/racket/"]{#racket on IRC}
 
 ◊link["https://twitter.com/racketlang"]{@racketlang on Twitter}
 
