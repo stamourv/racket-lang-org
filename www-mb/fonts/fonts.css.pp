@@ -1,17 +1,20 @@
 #lang pollen
 ◊(require css-tools/font-face)
 
-◊(ffd/rp "cooper-hewitt" "CooperHewitt-Book.otf" 
+◊(ffd/rp "cooper-hewitt" "private/CooperHewitt-Book.otf" 
 #:font-style "normal" #:font-weight "normal" #:base64 #t)
 
-◊(ffd/rp "cooper-hewitt" "CooperHewitt-Medium.otf" 
+◊(ffd/rp "cooper-hewitt" "private/CooperHewitt-Medium.otf" 
 #:font-style "normal" #:font-weight "bold" #:base64 #t)
 
-◊(ffd/rp "source-code-pro" "sourcecodepro-light.woff" 
+◊(ffd/rp "source-code-pro" "private/sourcecodepro-light.woff" 
 #:font-style "normal" #:font-weight "300" #:base64 #t)
 
-◊(ffd/rp "source-code-pro" "sourcecodepro-regular.woff" 
+◊(ffd/rp "source-code-pro" "private/sourcecodepro-regular.woff" 
 #:font-style "normal" #:font-weight "normal" #:base64 #t)
 
-◊(ffd/rp "source-code-pro" "sourcecodepro-medium.woff" 
+◊(ffd/rp "source-code-pro" "private/sourcecodepro-medium.woff" 
 #:font-style "normal" #:font-weight "bold" #:base64 #t)
+
+◊(ffd/rp "feather" "private/feather.woff" 
+#:font-style "normal" #:font-weight "normal" #:base64 #t)

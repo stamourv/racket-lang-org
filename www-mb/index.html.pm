@@ -2,7 +2,7 @@
 
 
 ◊top-section{
-◊span[#:id "logo" #:style "font-size:2.3rem;white-space:nowrap;"]{◊img[#:src "racket-logo.svg" #:class "logo"] Racket ◊span[#:id "tagline" #:class "disappearing" #:style "font-size:70%;color:gray;white-space:nowrap;margin-left:0.2rem;"]{solve problems · make languages}}
+◊span[#:id "logo" #:style "font-size:2.3rem;white-space:nowrap;"]{◊img[#:src "img/racket-logo.svg" #:class "logo"] Racket ◊span[#:id "tagline" #:class "disappearing" #:style "font-size:70%;color:gray;white-space:nowrap;margin-left:0.2rem;"]{solve problems · make languages}}
 
 ◊div{
 ◊link[#:class "top-button disappearing-late" #:id "packages" "https://pkgs.racket-lang.org/"]{packages}

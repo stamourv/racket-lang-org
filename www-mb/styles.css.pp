@@ -171,32 +171,32 @@ ul.doclinks li {
 
 
 div#f1 {
-    background: white url("images/batteries.svg");
+    background: white url("img/batteries.svg");
     background-size: 100%;
 }
 
 div#f2 {
-    background: white url("images/oss.svg");
+    background: white url("img/oss.svg");
     background-size: 100%;
 }
 
 div#f3 {
-    background: white url("images/drracket.svg");
+    background: white url("img/drracket.svg");
     background-size: 100%;
 }
 
 div#f4 {
-    background: white url("images/scheme.svg");
+    background: white url("img/scheme.svg");
     background-size: 100%;
 }
 
 div#f5 {
-    background: white url("images/lang.svg");
+    background: white url("img/lang.svg");
     background-size: 100%;
 }
 
 div#f6 {
-    background: white url("images/platform.svg");
+    background: white url("img/platform.svg");
     background-size: 100%;
 }
 
@@ -212,7 +212,7 @@ div#f6 {
   font-size: 80%;
   text-transform: uppercase;
   position: relative;
-  top: -0.2rem
+  top: -0.2rem;
 }
 
 .top-button + .top-button {
