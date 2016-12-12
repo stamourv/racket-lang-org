@@ -297,6 +297,10 @@ section-content > li {
 
 }
 
+/* selects lis in sections with a title */
+section-title + section-content > li {
+  width: 47%; 
+}
 
 
 section#book section-content {
@@ -339,9 +343,6 @@ pre a {
   font-weight: bolder;
 }
 
-
-
-
 download-button {
   display:inline-block;
   background: ◊|link-color|;
@@ -377,6 +378,11 @@ a {
   font-weight: bolder;
 }
 
+#logo a {
+  color: inherit;
+  font-weight: inherit;
+}
+
 a:hover {
   opacity: 0.6;
 }
@@ -399,6 +405,7 @@ a, a:hover {
   section-title {width: 100%; margin-bottom: 1rem;}
   section-content li {width: 100%;}
   .disappearing {display: none;}
+  section-title + section-content > li {width: 100%;}
 }
 
 /* smartphones only */

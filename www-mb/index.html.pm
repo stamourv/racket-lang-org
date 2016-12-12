@@ -223,13 +223,14 @@ community
 
 ◊link["https://blog.racket-lang.org/"]{Blog}
 
-◊link["https://botbot.me/freenode/racket/"]{#racket on IRC}
+◊link["https://botbot.me/freenode/racket/"]{IRC: #racket on freenode.net}
 
 ◊link["https://twitter.com/racketlang"]{@racketlang on Twitter}
 
-◊link["http://racket-lang.org/people.html"]{PLT: The team behind Racket}
+◊link["people.html"]{PLT: the team behind Racket}
 
-◊link["http://racket-lang.org/learning.html"]{Books & research}
+◊link["learning.html"]{Books & education}
+
 
 }
 
