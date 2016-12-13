@@ -13,33 +13,77 @@
 
 
 ◊section{
-PLT principals
+PLT shareholders
 
 ◊link["http://www.ccs.neu.edu/home/matthias/"]{Matthias Felleisen}
-Trustee Professor
-College of Computer and Information Science
-Northeastern University
 
-◊link["https://www.eecs.northwestern.edu/~robby/"]{Robby Findler}
-Associate Professor
-Electrical Engineering and Computer Science
-Northwestern University
+◊link["https://www.eecs.northwestern.edu/~robby/"]{Robert Bruce Findler}
 
 ◊link["http://www.cs.utah.edu/~mflatt/"]{Matthew Flatt}
-Professor
-School of Computing
-University of Utah
+
+Shriram Krishnamurthi
+
+Dorai Sitaram
+
+John Clements
+
+Eli Barzilay
+
+Philippe Meunier
+
+Kathryn E. Gray
+
+Adam Wick
+
+Scott Owens
+
+Jacob Matthews
 
 ◊link["https://jeapostrophe.github.io/home/"]{Jay McCarthy}
-Associate Professor
-Computer Science Department
-University of Massachusetts at Lowell
+
+Kathi Fisler
+
+Michael Sperber
 
 ◊link["http://homes.soic.indiana.edu/samth/"]{Sam Tobin-Hochstadt}
-Assistant Professor
-School of Informatics & Computing
-Indiana University
 
+Ryan Culpepper
+
+Danny Yoo
+
+T. Stephen Strickland
+
+Carl Eastlund
+
+Christos Dimoulas
+
+Kevin Tew
+
+Jon Rafkind
+
+Neil Toronto
+
+Stephen Chang
+
+David Van Horn
+
+Jens Axel Søgaard
+
+Greg Hendershott
+
+Eric Dobson
+
+James Swaine
+
+Vincent St-Amour
+
+Burke Fetscher
+
+Neil Van Dyke
+
+Asumu Takikawa
+
+Matthew Butterick
 }
 
 
