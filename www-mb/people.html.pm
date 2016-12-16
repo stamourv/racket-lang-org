@@ -19,7 +19,7 @@
 
 ◊link["http://www.ccs.neu.edu/home/matthias/"]{Matthias Felleisen}
 
-◊link["https://www.eecs.northwestern.edu/~robby/"]{Robert Bruce Findler}
+◊link["https://www.eecs.northwestern.edu/~robby/"]{Robby Findler}
 
 ◊link["http://www.cs.utah.edu/~mflatt/"]{Matthew Flatt}
 
