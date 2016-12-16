@@ -66,11 +66,12 @@ top-section {
 }
 
 .feature {
-    height: 7rem;
+    height: 100%;
 }
 
 .lang {
-    height: 5.5rem;
+    ~height: 5.5rem;
+    height: 10rem;
 }
 
 
@@ -122,7 +123,7 @@ top-section {
     opacity: 1;
 }
 
-
+.feature:hover > .inner,
 .active_expander:hover > .inner {
     opacity: 1;
     pointer-events: auto;

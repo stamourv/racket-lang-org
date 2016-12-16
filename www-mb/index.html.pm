@@ -16,77 +16,67 @@
 
 ◊special-section{
 
-◊feature["batteries included" #:id "f1"]{Racket's extensive standard library gets your projects off the ground quickly.
-
+◊feature["Batteries included" #:id "f1"]{Racket's extensive standard library gets your projects off the ground quickly.
 ◊doclinks{
 ◊doclink["web-server"]{Web applications}
 ◊doclink["db"]{Database}
 ◊doclink["math"]{Math & statistics}
 ◊link["http://docs.racket-lang.org"]{full list ◊begin['rarr]}
 }
-
 } 
 
 
-◊feature["powerful macros & languages" #:id "f5"]{Racket's crown jewel is its macro system, which lets you freely extend the language.
-
-◊doclinks{
-◊link["http://docs.racket-lang.org/guide/macros.html"]{Intro to macros}
-◊link["http://docs.racket-lang.org/reference/Macros.html"]{Macros in depth}
-◊link["http://docs.racket-lang.org/reference/syntax-model.html"]{Racket syntax model}
-◊link["http://docs.racket-lang.org/guide/hash-languages.html"]{Making new languages}
-}
-
-}
-
-
-◊feature["IDE & tons of documentation" #:id "f3"]{Racket includes a graphical IDE that's integrated with its vast documentation.
-
-◊doclinks{
-◊doclink["quick"]{DrRacket tutorial}
-◊doclink["drracket"]{DrRacket guide}
-◊doclink["drracket-tools"]{DrRacket tools}
-◊doclink["scribble"]{Scribble}
-}
-
-}
-
-
-◊feature["the best of Scheme and Lisp" #:id "f4"]{Racket started life as a Scheme implementation, but then grew into new areas.
-
-◊doclinks{
-◊link["http://www.ccs.neu.edu/home/matthias/manifesto/"]{The Racket Manifesto}
-◊link["http://docs.racket-lang.org/guide/to-scheme.html"]{Racket essentials}
-◊link["http://docs.racket-lang.org/style/index.html"]{How to Program Racket}
-◊doclink["r6rs"]{Using R6RS Scheme}
-}
-
-
-}
-
-
-◊feature["cross-platform" #:id "f6"]{Racket runs on Linux, macOS, and Windows. Develop on one; deploy to all three.
+◊feature["Cross-platform" #:id "f6"]{Racket runs on Linux, macOS, and Windows. Develop on one; deploy to all three.
 ◊doclinks{
 ◊link["http://docs.racket-lang.org/pkg/index.html"]{Package system}
 ◊link["http://docs.racket-lang.org/framework/index.html"]{GUI framework}
 ◊link["https://docs.racket-lang.org/raco/exe.html"]{Standalone binaries}
 ◊link["http://docs.racket-lang.org/foreign/index.html"]{Foreign interface}
 }
-
-
 }
 
 
-◊feature["mature, stable, open source" #:id "f2"]{Racket is a mature LGPL project that's actively developed and maintained.
+◊feature["Powerful macros & languages" #:id "f5"]{Racket's crown jewel is its macro system, which lets you freely extend the language.
+◊doclinks{
+◊link["http://docs.racket-lang.org/guide/macros.html"]{Intro to macros}
+◊link["http://docs.racket-lang.org/reference/Macros.html"]{Macros in depth}
+◊link["http://docs.racket-lang.org/reference/syntax-model.html"]{Racket syntax model}
+◊link["http://docs.racket-lang.org/guide/hash-languages.html"]{Making new languages}
+}
+}
 
+
+
+◊feature["Mature, stable, open source" #:id "f2"]{Racket is a mature LGPL project that's actively developed and maintained.
 ◊doclinks{
 ◊link["https://github.com/racket"]{Racket repositories}
 ◊link["https://github.com/racket/racket"]{Main repository}
 ◊link["https://racket-lang.org/people.html"]{The PLT Group}
 ◊link["https://groups.google.com/forum/#!forum/racket-users"]{Racket mailing list}
 }
-
 }
+
+
+
+◊feature["DrRacket IDE & tons of documentation" #:id "f3"]{DrRacket is a graphical IDE that's integrated with Racket's vast documentation.
+◊doclinks{
+◊doclink["quick"]{DrRacket tutorial}
+◊doclink["drracket"]{DrRacket guide}
+◊doclink["drracket-tools"]{DrRacket tools}
+◊doclink["scribble"]{Scribble}
+}
+}
+
+
+◊feature["The best of Scheme and Lisp" #:id "f4"]{Racket started life as a Scheme implementation, but then grew into new areas.
+◊doclinks{
+◊link["http://www.ccs.neu.edu/home/matthias/manifesto/"]{The Racket Manifesto}
+◊link["http://docs.racket-lang.org/guide/to-scheme.html"]{Racket essentials}
+◊link["http://docs.racket-lang.org/style/index.html"]{How to program Racket}
+◊doclink["r6rs"]{Using R6RS Scheme}
+}
+}
+
 
 
 }
@@ -174,9 +164,9 @@ The ◊tt{web-server/insta} language lets you quickly prototype server-side web 
 
 
 ◊section{
-software
+Software
 
-◊link["https://download.racket-lang.org/"]{Download (version 6.7)}
+◊link["https://download.racket-lang.org/"]{Download Racket v6.7}
 
 ◊link["https://github.com/plt/racket/"]{Source code}
 
@@ -190,15 +180,15 @@ software
 
 
 ◊section{
-documentation & tutorials
+Documentation & tutorials
 
 ◊link["https://docs.racket-lang.org/quick/"]{Quick introduction}
 
 ◊link["https://docs.racket-lang.org/more/"]{Systems programming}
 
-◊link["https://docs.racket-lang.org/guide/"]{The Racket Guide}
+◊link["https://docs.racket-lang.org/guide/"]{The Racket guide}
 
-◊link["https://docs.racket-lang.org/reference/"]{The Racket Reference}
+◊link["https://docs.racket-lang.org/reference/"]{The Racket reference}
 
 ◊link["https://docs.racket-lang.org/continue/"]{Web applications}
 
@@ -209,7 +199,7 @@ documentation & tutorials
 
 
 ◊section{
-news
+News
 
 ◊link["http://blog.racket-lang.org/2015/11/racket-v63.html"]{Racket version 6.7} is available
 
@@ -217,26 +207,57 @@ news
 }
 
 ◊section{
-community
+Community
 
 ◊link["https://lists.racket-lang.org/"]{Mailing list}
 
 ◊link["https://blog.racket-lang.org/"]{Blog}
 
-◊link["https://botbot.me/freenode/racket/"]{IRC: #racket on freenode.net}
+◊link["https://botbot.me/freenode/racket/"]{#racket IRC on freenode.net}
 
 ◊link["https://twitter.com/racketlang"]{@racketlang on Twitter}
 
 ◊link["people.html"]{PLT: the team behind Racket}
 
-◊link["learning.html"]{Books & education}
+}
 
+
+◊section{
+Books
+
+
+◊link["http://www.htdp.org/"]{How to Design Programs}
+A principled approach to program design. Aimed at the programming novice.
+
+
+◊link["https://www.realmofracket.com/"]{Realm of Racket}
+Learn Racket and programming, one game at a time. For those just starting out with Racket.
+
+
+◊link["https://cs.brown.edu/~sk/Publications/Books/ProgLangs/2007-04-26/"]{Programming Languages: Application and Interpretation}
+Foundations of programming languages. For undergraduates, graduate students, and experts.
+
+
+◊link["https://redex.racket-lang.org/"]{Semantics Engineering 
+with PLT Redex}
+Lightweight automation for semantics. For the working language engineer.
+}
+
+
+◊section{
+Education
+
+◊link["http://programbydesign.org/"]{Program by Design}
+A workshop to train teachers using ◊link["http://htdp.org/"]{How to Design Programs} in the classroom
+
+◊link["http://www.bootstrapworld.org/"]{Bootstrap}
+A curriculum for middle-school students
 
 }
 
 
 
 ◊section[#:id "bottom" #:class "one-column-body-text"]{
-thank you
+Thank you
 
 To ◊link["http://www.nsf.gov/"]{the NSF}, ◊link["http://www.darpa.mil/"]{DARPA}, the ◊link["http://www.ed.gov/FIPSE/"]{Fund for the Improvement of Postsecondary Education (FIPSE)} at the ◊link["http://www.ed.gov/"]{US Department of Education}, the ◊link["http://www.exxonmobil.com/Corporate/community_foundation.aspx"]{Exxon Foundation}, CORD, partners of the Academy of Information Technology, ◊link["http://microsoft.com/"]{Microsoft}, ◊link["http://mozilla.org/"]{Mozilla}, and ◊link["http://google.com/"]{Google} for their generous support over the years.}
