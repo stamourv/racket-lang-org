@@ -13,7 +13,9 @@
 
 
 ◊section{
-PLT shareholders
+◊div{PLT shareholders
+
+◊p[#:style "font-size: 80%;margin-top: 1rem;color: gray;width:80%;line-height:1.5"]{Racket is developed by a broad community of contributors. The following people are among the long-term contributors who have been recognized for their work by being made PLT shareholders.}}
 
 ◊link["http://www.ccs.neu.edu/home/matthias/"]{Matthias Felleisen}
 
@@ -21,75 +23,75 @@ PLT shareholders
 
 ◊link["http://www.cs.utah.edu/~mflatt/"]{Matthew Flatt}
 
-Shriram Krishnamurthi
+◊link["https://cs.brown.edu/~sk/"]{Shriram Krishnamurthi}
 
-Dorai Sitaram
+◊link["https://ds26gte.github.io/"]{Dorai Sitaram}
 
-John Clements
+◊link["https://www.brinckerhoff.org/"]{John Clements}
 
-Eli Barzilay
+◊link["http://www.barzilay.org/"]{Eli Barzilay}
 
-Philippe Meunier
+◊link["https://github.com/philippemeunier"]{Philippe Meunier}
 
-Kathryn E. Gray
+◊link["https://www.cl.cam.ac.uk/~keg29/"]{Kathryn E. Gray}
 
-Adam Wick
+◊link["https://galois.com/team/adam-wick/"]{Adam Wick}
 
-Scott Owens
+◊link["https://www.cs.kent.ac.uk/~sao/"]{Scott Owens}
 
-Jacob Matthews
+◊link["https://plus.google.com/101566548031352274103"]{Jacob Matthews}
 
 ◊link["https://jeapostrophe.github.io/home/"]{Jay McCarthy}
 
-Kathi Fisler
+◊link["http://www.cs.wpi.edu/~kfisler/"]{Kathi Fisler}
 
-Michael Sperber
+◊link["http://www.deinprogramm.de/sperber/"]{Michael Sperber}
 
 ◊link["http://homes.soic.indiana.edu/samth/"]{Sam Tobin-Hochstadt}
 
-Ryan Culpepper
+◊link["http://www.ccs.neu.edu/home/ryanc/"]{Ryan Culpepper}
 
-Danny Yoo
+◊link["http://www.hashcollision.org/"]{Danny Yoo}
 
-T. Stephen Strickland
+◊link["https://www.cs.umd.edu/~sstrickl/"]{T. Stephen Strickland}
 
-Carl Eastlund
+◊link["www.ccs.neu.edu/home/cce/"]{Carl Eastlund}
 
-Christos Dimoulas
+◊link["http://people.seas.harvard.edu/~chrdimo/"]{Christos Dimoulas}
 
-Kevin Tew
+◊link["https://it.et.byu.edu/faculty/kevin-tew"]{Kevin Tew}
 
-Jon Rafkind
+◊link["https://www.cs.utah.edu/~rafkind/"]{Jon Rafkind}
 
-Neil Toronto
+◊link["https://www.cs.umd.edu/~ntoronto/"]{Neil Toronto}
 
-Stephen Chang
+◊link["http://www.ccs.neu.edu/home/stchang/"]{Stephen Chang}
 
-David Van Horn
+◊link["https://www.cs.umd.edu/~dvanhorn/"]{David Van Horn}
 
-Jens Axel Søgaard
+◊link["https://github.com/soegaard"]{Jens Axel Søgaard}
 
-Greg Hendershott
+◊link["http://greghendershott.com"]{Greg Hendershott}
 
-Eric Dobson
+◊link["https://github.com/endobson"]{Eric Dobson}
 
-James Swaine
+◊link["https://www.linkedin.com/in/james-swaine-6388a819"]{James Swaine}
 
-Vincent St-Amour
+◊link["http://users.eecs.northwestern.edu/~stamourv/"]{Vincent St-Amour}
 
-Burke Fetscher
+◊link["http://users.eecs.northwestern.edu/~baf111/"]{Burke Fetscher}
 
-Neil Van Dyke
+◊link["http://www.neilvandyke.org/"]{Neil Van Dyke}
 
-Asumu Takikawa
+◊link["http://www.ccs.neu.edu/home/asumu/"]{Asumu Takikawa}
 
-Matthew Butterick
+◊link["http://beautifulracket.com"]{Matthew Butterick}
 }
 
 
 
 ◊section{
-PLT research teams
+PLT research
 
 ◊link["http://www.ccs.neu.edu/racket/"]{Northeastern University}
 Boston MA
@@ -106,7 +108,8 @@ Providence RI
 ◊link["https://jeapostrophe.github.io/home/"]{University of Massachusetts}
 Lowell MA
 
-◊link["http://www.brinckerhoff.org/"]{California Polytechnic State University}
+◊link["http://www.brinckerhoff.org/"]{California Polytechnic 
+State University}
 San Luis Obispo CA
 
 ◊link["https://web.cs.wpi.edu/~kfisler/"]{Worcester Polytechnic Institute}
