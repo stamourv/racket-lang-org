@@ -83,7 +83,7 @@
       (* 500 (/ (+ A x) (* 2 A))))
     
     (define (normalize-y y)
-      (* 200 (/ (+ B y) (* 2 B))))
+      (* 195 (/ (+ B y) (* 2 B))))
     (define next-pt (cons (normalize-x (* A (sin (+ (* a t) delta))))
                           (normalize-y (* B (sin (* b t))))))
     

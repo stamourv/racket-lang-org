@@ -202,31 +202,37 @@ ul.doclinks li {
 div#f1 {
     background: white url("img/batteries.svg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 div#f2 {
     background: white url("img/oss.svg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 div#f3 {
     background: white url("img/drracket.svg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 div#f4 {
     background: white url("img/scheme.svg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 div#f5 {
     background: white url("img/lang.svg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 div#f6 {
     background: white url("img/platform.svg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 
