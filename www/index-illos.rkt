@@ -308,3 +308,6 @@
     (draw-lang)
     (draw-oss)
     (draw-dragon)))
+
+(define generate-svg-illos svg)
+(provide generate-svg-illos)

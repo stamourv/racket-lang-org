@@ -5,7 +5,9 @@
          raco/all-tools
          "../identity.rkt"
          "../testing.rkt"
-         "home-illos.rkt")
+         "index-illos.rkt")
+
+(generate-svg-illos)
 
 (define www-2016-site
   (site "www" ; deliberately write into existing "www" dir
@@ -19,11 +21,7 @@
 (define v (all-tools))
 ;; pollen rebuild
 (parameterize ([current-directory (simplify-path www-dir)])
-  (parameterize ([current-command-line-arguments (vector "render -r *.p")])
-    (dynamic-require (second (hash-ref v "pollen")) #f))
-  (parameterize ([current-command-line-arguments (vector "render -r *.pp")])
-    (dynamic-require (second (hash-ref v "pollen")) #f))
-  (parameterize ([current-command-line-arguments (vector "render -r *.pm")])
+  (parameterize ([current-command-line-arguments (vector "render" "-r")])
     (dynamic-require (second (hash-ref v "pollen")) #f)))
 
 (define (excluded-path? path)
