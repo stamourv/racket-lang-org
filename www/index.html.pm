@@ -214,7 +214,7 @@ Community
 
 ◊link["https://twitter.com/racketlang"]{@racketlang on Twitter}
 
-◊link["people.html"]{PLT: the team behind Racket}
+◊link["plt.html"]{PLT: the team behind Racket}
 
 }
 
