@@ -1,5 +1,5 @@
 #lang racket
-(require racket/gui sugar/debug sugar/list)
+(require racket/gui sugar/debug sugar/list racket/runtime-path)
 (define current-dc (make-parameter #f))
 (define current-format (make-parameter 'gui))
 (define current-target (make-parameter #f))
@@ -30,15 +30,16 @@
         (real-part end) (imag-part end))
   (send (current-dc) draw-path p))
 
+(define-runtime-path illo-dir "img/illos/")
+
 (define (start name)
-  (define dir "img/illos/")
-  (when (not (directory-exists? dir))
-    (make-directory dir))
+  (when (not (directory-exists? illo-dir))
+    (make-directory illo-dir))
   (current-target (make-bitmap hmax vmax))
   (current-dc (if (eq? 'svg (current-format))
                   (new svg-dc% [width hmax]
                        [height vmax]
-                       [output (format "~a~a.svg" dir name)] [exists 'replace])
+                       [output (format "~a~a.svg" illo-dir name)] [exists 'replace])
                   (new bitmap-dc% [bitmap (current-target)])))
   (when (eq? 'svg (current-format))
     (send* (current-dc) [start-doc "start"] [start-page]))
