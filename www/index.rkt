@@ -4,7 +4,8 @@
          racket/path
          raco/all-tools
          "../identity.rkt"
-         "../testing.rkt")
+         "../testing.rkt"
+         "home-illos.rkt")
 
 (define www-2016-site
   (site "www" ; deliberately write into existing "www" dir
