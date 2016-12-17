@@ -76,9 +76,6 @@
 ◊doclink["r6rs"]{Using R6RS Scheme}
 }
 }
-
-
-
 }
 
 
@@ -227,20 +224,21 @@ Books
 
 
 ◊link["http://www.htdp.org/"]{How to Design Programs}
-A principled approach to program design. Aimed at the programming novice.
+A principled approach to programming.
 
 
 ◊link["https://www.realmofracket.com/"]{Realm of Racket}
-Learn Racket and programming, one game at a time. For those just starting out with Racket.
+Learn to program with Racket, one game at a time.
 
 
-◊link["https://cs.brown.edu/~sk/Publications/Books/ProgLangs/2007-04-26/"]{Programming Languages: Application and Interpretation}
-Foundations of programming languages. For undergraduates, graduate students, and experts.
+◊link["https://cs.brown.edu/~sk/Publications/Books/ProgLangs/2007-04-26/"]{Programming Languages: 
+Application and Interpretation}
+For undergraduates, graduate students, and experts.
 
 
 ◊link["https://redex.racket-lang.org/"]{Semantics Engineering 
 with PLT Redex}
-Lightweight automation for semantics. For the working language engineer.
+Semantics automation for language engineers.
 }
 
 
@@ -248,7 +246,7 @@ Lightweight automation for semantics. For the working language engineer.
 Education
 
 ◊link["http://programbydesign.org/"]{Program by Design}
-A workshop to train teachers using ◊link["http://htdp.org/"]{How to Design Programs} in the classroom
+A workshop to train teachers using ◊link["http://htdp.org/" #:style "color:gray"]{How to Design Programs} in the classroom
 
 ◊link["http://www.bootstrapworld.org/"]{Bootstrap}
 A curriculum for middle-school students

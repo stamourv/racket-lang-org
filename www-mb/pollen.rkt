@@ -12,7 +12,7 @@
   (define activate #f) ; make #f for real site
   (match-define (cons name xs) elems)
   (define new-attrs (list* `(class ,(format "expander lang ~a" (if activate " active_expander" ""))) `(onClick ,(format "handle_expander_click('~a')" (cadr (assq 'id attrs)))) attrs))
-  `(div ,new-attrs (div ((class "name")) ,name) (div ((class "inner")) ,@xs)))
+  `(div ,new-attrs (div ((class "name")) ,name (span ((class "click-here")) "[click for more]")) (div ((class "inner")) ,@xs)))
 
 (define (root . elems)
   (list* 'div '((id "doc")) 

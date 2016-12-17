@@ -115,12 +115,19 @@ top-section {
     white-space: pre;
 }
 
-/* opens lang boxes for debugging */
-~.lang {
-    height: 20rem;
+
+.lang .click-here {
+  opacity: 0;
+  font-size: 80%;
+  margin-left: 1rem;
 }
-~.lang > .inner {
-    opacity: 1;
+
+.lang:hover .click-here {
+  opacity: 0.8;
+}
+
+.lang.active_expander:hover .click-here {
+  opacity: 0;
 }
 
 .feature:hover > .inner,
@@ -413,6 +420,9 @@ a, a:hover {
   section-content li {width: 100%;}
   .disappearing {display: none;}
   section-title + section-content > li {width: 100%;}
+  li > p {width: 95%}
+  .lang .click-here { opacity: 0.8;}
+  .lang.active_expander .click-here { opacity: 0;}
 }
 
 /* smartphones only */
@@ -422,4 +432,5 @@ a, a:hover {
   .active_expander > .inner {opacity: 1;}
   .expander, .expander:hover, .active_expander:hover {border-color: none;}
   .active_expander {border-color: gray;}
+
 }
