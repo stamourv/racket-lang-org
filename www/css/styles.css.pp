@@ -179,37 +179,37 @@ ul.doclinks li {
 
 
 div#f1 {
-    background: white url("img/batteries.svg");
+    background: white url("../img/illos/batteries.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 div#f2 {
-    background: white url("img/oss.svg");
+    background: white url("../img/illos/oss.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 div#f3 {
-    background: white url("img/drracket.svg");
+    background: white url("../img/illos/drracket.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 div#f4 {
-    background: white url("img/scheme.svg");
+    background: white url("../img/illos/scheme.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 div#f5 {
-    background: white url("img/lang.svg");
+    background: white url("../img/illos/lang.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 div#f6 {
-    background: white url("img/platform.svg");
+    background: white url("../img/illos/platform.svg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
