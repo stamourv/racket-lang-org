@@ -25,7 +25,7 @@
 ◊h3{◊xtarget["speakers"]{◊head["a"]{Keynote}}}
 
 ◊head["b"]{Dan Friedman}
-◊head["b"]{& Will Byrd}
+◊head["b"]{& Will Byrd}
 
 ◊gap[2]
 

@@ -311,6 +311,11 @@ schedule > row + row {
       padding-right: 0.75rem;
     }
 
+    .head {
+        font-size: 2.5rem;
+        height: 2rem;
+    }
+
   .two-col {
     ◊(make-css-columns #:count 1);
   }
