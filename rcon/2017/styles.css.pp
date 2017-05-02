@@ -24,6 +24,41 @@
     src: url('fonts/CooperHewitt-BookItalic.woff') format('woff');
 }
 
+@font-face{
+    font-family: 'bungee-shade';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/Bungee-Shade.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'bungee-regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/Bungee-Regular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'bungee-outline';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/Bungee-Outline.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'bungee-hairline';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/Bungee-Hairline.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'bungee-inline';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/Bungee-Inline.woff') format('woff');
+}
+
 
 * {
   padding: 0;
@@ -43,8 +78,8 @@ tt {
   font-size: 90%;
 }
 
-◊(define anchor-color "#900")
-◊(define anchor-bright-color "rgb(135, 206, 250)")
+◊(define anchor-color "magenta")
+◊(define anchor-bright-color "cyan")
 
 
 a, a:visited {
@@ -111,21 +146,49 @@ div#doc {
   background: white;
   padding-left: 6rem;
   padding-right: 2rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 10rem;
   border: 0px solid black;
   border-top: 0px;
 }
 
 
-h1 {
-  display: inline;
-  font-size: 2rem;
-  font-weight: 200;
-  margin-right: 0.25rem;
-  position: relative;
-  left: -0.25rem; ◊; this impliedly creates space on the right side
+.head {
+  font-size: 5rem;
+  height: 4.5rem;
+  line-height: 1;
+  transform: skew(-6deg, -12deg);
+  ~filter:blur(2px);
+  position: static;
 }
+
+.head div {
+  position: absolute;
+}
+
+.head#a {
+  font-family: bungee-outline;
+}
+
+.head#b {
+  font-family: bungee-regular;
+}
+
+.head#b .w { font-family: bungee-outline; }
+
+.head#c {
+  font-family: bungee-outline;
+}
+
+.head#c .w { font-family: bungee-regular; }
+
+.c, .m, .y {mix-blend-mode: multiply;}
+.c {color: cyan;}
+.m {color: magenta;}
+.y {color: yellow;}
+.w {mix-blend-mode: lighten; color: white; }
+
+.movable { transition: transform 6s linear; }
 
 h2 {
   display: inline;

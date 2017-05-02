@@ -1,14 +1,18 @@
 #lang pollen
 ◊(require racket/file pollen/cache)
 
+
+
+◊head["a"]{Seventh}
+◊head["b"]{RacketCon}
+◊head["c"]{Seattle 2017}
+
+◊gap[4]
+
 ◊(define this-rc-date "7–8 October 2017")
 
-◊h1{Seventh}
-◊h1{RacketCon}
-
-
 ◊h2{◊xlink["register"]{◊this-rc-date}}
-◊h2{◊xlink["register"]{Seattle: University of Washington}}
+◊h2{◊xlink["register"]{University of Washington}}
 ◊h2{◊xlink{Speakers}}
 ◊h2{◊xlink{Register}}
 ◊h2{◊xlink{Schedule}}
@@ -18,21 +22,23 @@
 
 ◊gap[1]
 
-◊h3{◊xtarget["speakers"]{◊(object #:id "keynote_svg" #:type "image/svg+xml" #:data "keynote.svg")}}
+◊h3{◊xtarget["speakers"]{◊head["a"]{Keynote}}}
 
-◊gap[1]
+◊head["b"]{Dan Friedman}
+◊head["b"]{& Will Byrd}
 
-◊keynote-speaker["" "Dan Friedman and Will Byrd"]{Things Behind the Sun}
+◊gap[2]
 
-◊gap[0.5]
+Keynote description
 
-I describe.
+◊bio{Speaker bio}
 
-◊bio{Two dudes}
 
 ◊gap[1.5]
 
-◊h3{◊xtarget["speakers"]{◊(object #:id "speakers_svg" #:type "image/svg+xml" #:data "speakers.svg")}}
+
+◊;{
+◊h3{◊xtarget["speakers"]{Speakers}}
 
 ◊gap[0]
 
@@ -40,6 +46,7 @@ I describe.
 
 ◊inline-list['sponsor]{
 ◊link["pollenpub.com"]{Matthew Butterick}}
+}
 
 ◊h3{Previous RacketCons}
 

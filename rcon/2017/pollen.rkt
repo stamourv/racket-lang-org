@@ -81,3 +81,10 @@
 
 (define (gap [size 1.5])
   `(div ((style ,(format "height: ~arem" size)))))
+
+(define (head which . xs)
+  `(div ((class "head") (id ,(format "~a" which)))
+        ,@(for/list ([c (in-string "cmyw")])
+                    `(div ((class ,(format "movable ~a" c))
+                           (style ,(format "transform: translate3d(~arem,~arem,0)" (- (random 4) 2) (- (random 4) 2)))
+                           (id ,(symbol->string (gensym)))) ,@xs))))

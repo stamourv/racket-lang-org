@@ -15,52 +15,33 @@
         } 
     }
 
+    var movable_div_ids = [];
 
-    var recolorable_paths = [];
+    function gather_movable_div_ids() {
+        divs = document.getElementsByClassName("movable");
+        for (var i = 0 ; i < divs.length ; i++) {
+            movable_div_ids.push(divs[i].id);
+        }
+    }
+
 
     function random_int(range) {
-        return Math.floor(Math.random() * (range + 1));
+        return Math.floor(Math.random() * range);
     }
 
-    function add_to_recolorable_paths(id) {
-        var paths = document.getElementById(id).getSVGDocument().getElementsByTagName("path");
-
-        for (var i = 0 ; i < paths.length ; i++) {
-            if (paths[i].id.indexOf("recolor") == 0) {
-                recolorable_paths.push(paths[i]);
-            }
-        }
+    function move_div() {
+        for (var i = 0 ; i < movable_div_ids.length ; i++) {
+        var dist = 6
+        var new_top = String((random_int(dist) - (dist/2))) + "rem";
+        var new_left = String((random_int(dist) - (dist/2))) + "rem";
+        var new_translate = "translate3d(" + new_top + "," + new_left + ", 0)";
+        document.getElementById(movable_div_ids[i]).style.transform = new_translate;
     }
-
-    function gather_recolorable_paths() {
-        add_to_recolorable_paths('rcon_svg');
-        add_to_recolorable_paths('keynote_svg');
-        add_to_recolorable_paths('speakers_svg');
-    }
-
-    function flip_color(path) {
-        var next_color = (path.getAttribute("stroke") == "◊rcon-red") ? "◊rcon-blue" : "◊rcon-red" ;
-        path.setAttribute("stroke", next_color);
-
-        if (path.getAttribute("stroke-width") == "8.25" && random_int(2) == 1) {
-            path.setAttribute("stroke-width", "32");
-        }
-
-        if (path.getAttribute("stroke-width") == "32" && random_int(2) == 1) {
-            path.setAttribute("stroke-width", "8.25");
-        }
-    }
-
-    function flip_color_of_random_paths() {
-        for (var i = 0 ; i < 15 ; i++) {
-            var which = random_int(recolorable_paths.length);
-            flip_color(recolorable_paths[which]);
-        }
-    }
+}
         
 
     </script>
 </head>
-<body onLoad="gather_recolorable_paths();setInterval(flip_color_of_random_paths, 1000)">
+<body onLoad="gather_movable_div_ids();move_div();setInterval(move_div, 3000)">
     ◊(->html #:tag 'div #:attrs '((id "doc")) doc)
 </body>
